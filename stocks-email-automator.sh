@@ -22,15 +22,15 @@ print(max_value)
 print(min_value)
 print(current_value)
 
-chart = time_table.plot()
-chart
+# chart = time_table.plot()
+# chart
 
 
 # In[ ]:
 
 
 receiver = "anibalneto29@gmail.com"
-subject = "Daily analisis of stocks"
+subject = "Daily Analisis of Stocks"
 message = f"""
 Good day,
 Below you encounter the analysis of the stock {ticker} from the last {data_time} days:
@@ -40,7 +40,7 @@ Current cotation: ${round(current_value,2)}
 
 
 Yours sincerely,
-Aníbal Figueiredo.
+Anibal Figueiredo.
 """
 
 print(receiver)
@@ -51,7 +51,7 @@ print(message)
 # In[ ]:
 
 
-pyautogui.PAUSE = 5
+pyautogui.PAUSE = 15
 
 pyautogui.hotkey("ctrl", "t")
 
@@ -60,17 +60,15 @@ pyautogui.press("enter")
 
 pyautogui.click(x=93, y=218)
 
-pyperclip.write(receiver, interval=0.125)
-pyautogui.hotkey("ctrl", "tab")
+pyautogui.write(receiver, interval=0.125)
+pyautogui.press("tab")
 pyautogui.press("tab")
 
-pyperclip.copy(subject)
-pyautogui.hotkey("ctrl", "v")
+pyautogui.write(subject, interval=0.125)
 
 pyautogui.press("tab")
 
-pyperclip.copy(message)
-pyautogui.hotkey("ctrl", "v")
+pyautogui.write(message, interval=0.0125)
 
 pyautogui.click(x=842, y=729)
 
