@@ -13,7 +13,7 @@ Currently the application have Linux support, but soon will have support to Wind
 
 "Good day,
 <br/>
-Below you encounter the analysis of the stock XXXX from the last 90 days:
+Below you encounter the analysis of the stock XXXX from the last YY days:
 <br/>
 Max cotation: $XXX.XX
 <br/>
